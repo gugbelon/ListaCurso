@@ -1,0 +1,7 @@
+<resources>
+    <string name= "app_name"> ListaCurso</string>
+    <string name= "Txt_Hint_Aplicativo_Lista_Curso"> Aplicativo Lista Curso</string>
+    <string name= "Txt_Hint_Finalizar"> Finalizar</string>
+    <string name= "Txt_Hint_Salvar"> Salvar</string>
+    <string name= "Limpar"> Limpar </string>
+</resources>
