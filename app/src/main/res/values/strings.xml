@@ -1,7 +1,10 @@
 <resources>
-    <string name= "app_name"> ListaCurso</string>
-    <string name= "Txt_Hint_Aplicativo_Lista_Curso"> Aplicativo Lista Curso</string>
-    <string name= "Txt_Hint_Finalizar"> Finalizar</string>
-    <string name= "Txt_Hint_Salvar"> Salvar</string>
-    <string name= "Limpar"> Limpar </string>
+    <string name= "app_name"> ListaCurso </string>
+    <string name= "Txt_Hint_Aplicativo_Lista_Curso"> Aplicativo Lista Curso </string>
+    <string name= "Btn_Hint_Finalizar"> Finalizar </string>
+    <string name= "Btn_Hint_Salvar"> Salvar </string>
+    <string name= "Btn_Hint_Limpar"> Limpar </string>
+    <string name="txt_hint_primeiro_nome"> Primeiro Nome </string>
+    <string name="Txt_hint_nome_do_curso">Nome Do Curso</string>
+    <string name="Txt_hint_fone_para_contato">Fone Para Contato</string>
 </resources>
