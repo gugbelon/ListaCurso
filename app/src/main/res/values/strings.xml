@@ -6,6 +6,6 @@
     <string name= "Btn_Hint_Limpar"> Limpar </string>
     <string name="txt_hint_primeiro_nome"> Primeiro Nome </string>
     <string name="Txt_hint_nome_do_curso">Nome Do Curso Desejado </string>
-    <string name="Txt_hint_fone_para_contato">Fone Para Contato </string>
+    <string name="Txt_hint_fone_contato">Fone Para Contato </string>
     <string name="Txt_hint_sobrenome">Sobrenome</string>
 </resources>
