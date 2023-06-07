@@ -1,8 +1,10 @@
-package devandoid.belon.listacurso;
+package devandoid.belon.listacurso.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import devandoid.belon.listacurso.R;
 
 public class MainActivity extends AppCompatActivity {
 
