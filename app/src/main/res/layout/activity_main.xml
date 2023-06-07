@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16sp"
-        android:hint="@string/Txt_Hint_Aplicativo_Lista_Curso"
+        android:background="@color/Vermelho"
         android:text="@string/Txt_Hint_Aplicativo_Lista_Curso"
         android:textSize="23sp"
         android:textStyle="bold"
@@ -127,8 +127,7 @@
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editFoneDeContato"
-        app:layout_constraintVertical_bias="0.808"
-        app:layout_margin="16dp" />
+        app:layout_constraintVertical_bias="0.808" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
