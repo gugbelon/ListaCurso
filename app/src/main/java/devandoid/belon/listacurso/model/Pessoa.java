@@ -1,5 +1,7 @@
 package devandoid.belon.listacurso.model;
 
+import androidx.annotation.NonNull;
+
 public class Pessoa {
 
     private String primeiroNome;
@@ -42,5 +44,15 @@ public class Pessoa {
 
     public Pessoa(){
 
+    }
+
+    @Override
+    public String toString() {
+        return "Pessoa{" +
+                "primeiroNome='" + primeiroNome + '\'' +
+                ", sobreNome='" + sobreNome + '\'' +
+                ", cursoDesejado='" + cursoDesejado + '\'' +
+                ", telefoneContato='" + telefoneContato + '\'' +
+                '}';
     }
 }
