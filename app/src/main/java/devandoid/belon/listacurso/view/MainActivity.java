@@ -3,6 +3,7 @@ package devandoid.belon.listacurso.view;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import devandoid.belon.listacurso.R;
 import devandoid.belon.listacurso.model.Pessoa;
@@ -26,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         pessoa.setCursoDesejado("Android");
         pessoa.setTelefoneContato("11-944903993");
 
-        outraPessoa= new Pessoa();
+        outraPessoa = new Pessoa();
         outraPessoa.setPrimeiroNome("Lucas");
         outraPessoa.setSobreNome("Belon");
         outraPessoa.setCursoDesejado("Android");
@@ -34,22 +35,25 @@ public class MainActivity extends AppCompatActivity {
 
         dadosPessoa = " primeiroNome: ";
         dadosPessoa += pessoa.getPrimeiroNome();
-        dadosPessoa = " Sobrenome: ";
+        dadosPessoa += " Sobrenome: ";
         dadosPessoa += pessoa.getSobreNome();
-        dadosPessoa = " Curso Desejado: ";
-        dadosPessoa = pessoa.getCursoDesejado();
-        dadosPessoa = " Telefone para contato: ";
-        dadosPessoa += pessoa.getTelefoneContato(); dadosPessoa = " primeiroNome: ";
+        dadosPessoa += " Curso Desejado: ";
+        dadosPessoa += pessoa.getCursoDesejado();
+        dadosPessoa += " Telefone para contato: ";
+        dadosPessoa += pessoa.getTelefoneContato();
 
-        dadosOutraPessoa = " PrimeiroNome";
+
+        dadosOutraPessoa = " PrimeiroNome: ";
         dadosOutraPessoa += outraPessoa.getPrimeiroNome();
-        dadosOutraPessoa = " Sobrenome: ";
+        dadosOutraPessoa += " Sobrenome: ";
         dadosOutraPessoa += outraPessoa.getSobreNome();
-        dadosOutraPessoa = " Curso Desejado: ";
-        dadosOutraPessoa = outraPessoa.getCursoDesejado();
-        dadosOutraPessoa = " Telefone para contato: ";
+        dadosOutraPessoa += " Curso Desejado: ";
+        dadosOutraPessoa += outraPessoa.getCursoDesejado();
+        dadosOutraPessoa += " Telefone para contato: ";
         dadosOutraPessoa += outraPessoa.getTelefoneContato();
 
-        int x = 0;
+        Log.i("POOAndroid", "Objeto Pessoa: " + pessoa.toString());
+        Log.i("POOAndroid", "Objeto OutraPessoa: " + outraPessoa.toString());
+
     }
 }
