@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
         btnFinalizar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this,"Finalizando o aplicativo",Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, "Finalizando o aplicativo", Toast.LENGTH_LONG).show();
                 finish();
             }
         });
@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
                 pessoa.setCursoDesejado(editCursoDesejado.getText().toString());
                 pessoa.setTelefoneContato(editFoneDeContato.getText().toString());
 
-                Toast.makeText(MainActivity.this, "Salvando o cplicativo" + pessoa.toString(),Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, "Salvando o cplicativo" + pessoa.toString(), Toast.LENGTH_LONG).show();
 
             }
         });
