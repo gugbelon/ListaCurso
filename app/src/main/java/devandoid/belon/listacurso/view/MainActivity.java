@@ -2,6 +2,7 @@ package devandoid.belon.listacurso.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -10,10 +11,15 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import devandoid.belon.listacurso.R;
+import devandoid.belon.listacurso.controller.PessoaController;
 import devandoid.belon.listacurso.model.Pessoa;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static final String NOME_PREFERENCES = "pref_listavip";
+    SharedPreferences preferences;
+
+    PessoaController controller;
     Pessoa pessoa;
     Pessoa outraPessoa;
 
@@ -35,7 +41,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        pessoa = new Pessoa();
+        preferences = getSharedPreferences(NOME_PREFERENCES, 0);
+        SharedPreferences.Editor listaVip = preferences.edit();
+
+        controller = new PessoaController();
+     //   controller.toString();
+
+
         //pessoa.setPrimeiroNome("Gustavo");
         //pessoa.setSobreNome("Belon");
         //pessoa.setCursoDesejado("Android");
@@ -55,7 +67,6 @@ public class MainActivity extends AppCompatActivity {
         dadosPessoa += pessoa.getCursoDesejado();
         dadosPessoa += " Telefone para contato: ";
         dadosPessoa += pessoa.getTelefoneContato();
-
 
         dadosOutraPessoa = " PrimeiroNome: ";
         dadosOutraPessoa += outraPessoa.getPrimeiroNome();
@@ -108,8 +119,18 @@ public class MainActivity extends AppCompatActivity {
 
                 Toast.makeText(MainActivity.this, "Salvando o cplicativo" + pessoa.toString(),Toast.LENGTH_LONG).show();
 
+                controller.salvar(pessoa);
+
+               /*listaVip.putString("primeiroNome", pessoa.getPrimeiroNome());
+               listaVip.putString("Sobrenome", pessoa.getSobreNome());
+               listaVip.putString("CursoDesejado",pessoa.getCursoDesejado());
+               listaVip.putString("TelefoneContato ", pessoa.getTelefoneContato());
+               listaVip.apply();
+                */
             }
         });
+
+
 
     }
 }
