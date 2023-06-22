@@ -121,12 +121,13 @@ public class MainActivity extends AppCompatActivity {
 
                 controller.salvar(pessoa);
 
-               /*listaVip.putString("primeiroNome", pessoa.getPrimeiroNome());
+
+               listaVip.putString("primeiroNome", pessoa.getPrimeiroNome());
                listaVip.putString("Sobrenome", pessoa.getSobreNome());
                listaVip.putString("CursoDesejado",pessoa.getCursoDesejado());
                listaVip.putString("TelefoneContato ", pessoa.getTelefoneContato());
                listaVip.apply();
-                */
+
             }
         });
 
