@@ -94,9 +94,6 @@ public class MainActivity extends AppCompatActivity {
 
                 Toast.makeText(MainActivity.this, "Salvando o aplicativo" + pessoa.toString(), Toast.LENGTH_LONG).show();
 
-
-                controller.salvar(pessoa);
-
             }
         });
 

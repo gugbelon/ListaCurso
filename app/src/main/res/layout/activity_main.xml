@@ -22,10 +22,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.022" />
 
-    <EditText android:id="@+id/editPrimeiroNome"
+    <EditText
+        android:id="@+id/editPrimeiroNome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/txt_hint_primeiro_nome"
         android:inputType="text"
@@ -35,13 +37,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTituloApp"
-        app:layout_constraintVertical_bias="0.029"
-        android:autofillHints="" />
+        app:layout_constraintVertical_bias="0.029" />
 
-    <EditText android:id="@+id/editSobreNomeAluno"
+    <EditText
+        android:id="@+id/editSobreNomeAluno"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/Txt_hint_sobrenome"
         android:inputType="text"
@@ -51,14 +54,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editPrimeiroNome"
-        app:layout_constraintVertical_bias="0.047"
-        android:autofillHints="" />
+        app:layout_constraintVertical_bias="0.047" />
 
 
-    <EditText android:id="@+id/editCursoDesejado"
+    <EditText
+        android:id="@+id/editCursoDesejado"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/Txt_hint_nome_do_curso"
         android:inputType="text"
@@ -69,13 +73,14 @@
         app:layout_constraintHorizontal_bias="0.062"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editSobreNomeAluno"
-        app:layout_constraintVertical_bias="0.066"
-        android:autofillHints="" />
+        app:layout_constraintVertical_bias="0.066" />
 
-    <EditText android:id="@+id/editFoneDeContato"
+    <EditText
+        android:id="@+id/editFoneDeContato"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/Txt_hint_fone_contato"
         android:inputType="text"
@@ -86,8 +91,7 @@
         app:layout_constraintHorizontal_bias="0.468"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editCursoDesejado"
-        app:layout_constraintVertical_bias="0.088"
-        android:autofillHints="" />
+        app:layout_constraintVertical_bias="0.088" />
 
     <Button
         android:id="@+id/btnLimpar"
