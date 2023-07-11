@@ -48,10 +48,11 @@ public class PessoaController {
         pessoa.setSobreNome(preferences.getString("Sobrenome", "NA"));
         pessoa.setCursoDesejado(preferences.getString("cursoDesejado", "NA"));
         pessoa.setTelefoneContato(preferences.getString("(telefoneContato", "NA"));
+        //listaVip.apply();
         return pessoa;
     }
 
-    public void limpar(Pessoa pessoa) {
+    public void limpar (Pessoa pessoa) {
         listaVip.clear();
         listaVip.apply();
     }
