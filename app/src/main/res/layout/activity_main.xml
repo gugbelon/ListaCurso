@@ -20,12 +20,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022" />
+        app:layout_constraintVertical_bias="0.044" />
 
-    <EditText android:id="@+id/editPrimeiroNome"
+    <EditText
+        android:id="@+id/editPrimeiroNome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/txt_hint_primeiro_nome"
         android:inputType="text"
@@ -35,13 +37,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTituloApp"
-        app:layout_constraintVertical_bias="0.029"
-        android:autofillHints="" />
+        app:layout_constraintVertical_bias="0.029" />
 
-    <EditText android:id="@+id/editSobreNomeAluno"
+    <EditText
+        android:id="@+id/editSobreNomeAluno"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/Txt_hint_sobrenome"
         android:inputType="text"
@@ -51,14 +54,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editPrimeiroNome"
-        app:layout_constraintVertical_bias="0.047"
-        android:autofillHints="" />
+        app:layout_constraintVertical_bias="0.047" />
 
 
-    <EditText android:id="@+id/editCursoDesejado"
+    <EditText
+        android:id="@+id/editCursoDesejado"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/Txt_hint_nome_do_curso"
         android:inputType="text"
@@ -69,44 +73,14 @@
         app:layout_constraintHorizontal_bias="0.062"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editSobreNomeAluno"
-        app:layout_constraintVertical_bias="0.066"
-        android:autofillHints="" />
+        app:layout_constraintVertical_bias="0.066" />
 
-    <TextView
-        android:id="@+id/txtListaSpinner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:text="@string/Txt_hint_selecione_curso"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btnFinalizar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner"
-        app:layout_constraintVertical_bias="0.195" />
-
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnFinalizar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editFoneDeContato"
-        app:layout_constraintVertical_bias="0.00999999" />
-
-
-
-
-    <EditText android:id="@+id/editFoneDeContato"
+    <EditText
+        android:id="@+id/editFoneDeContato"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/Txt_hint_fone_contato"
         android:inputType="text"
@@ -117,8 +91,7 @@
         app:layout_constraintHorizontal_bias="0.468"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editCursoDesejado"
-        app:layout_constraintVertical_bias="0.088"
-        android:autofillHints="" />
+        app:layout_constraintVertical_bias="0.088" />
 
     <Button
         android:id="@+id/btnLimpar"
@@ -128,10 +101,10 @@
         android:text="@string/Btn_Hint_Limpar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintHorizontal_bias="0.051"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editFoneDeContato"
-        app:layout_constraintVertical_bias="0.511" />
+        app:layout_constraintVertical_bias="0.396" />
 
     <Button
         android:id="@+id/btnSalvar"
@@ -141,10 +114,10 @@
         android:text="@string/Btn_Hint_Salvar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.869"
+        app:layout_constraintHorizontal_bias="0.855"
         app:layout_constraintStart_toEndOf="@+id/btnLimpar"
         app:layout_constraintTop_toBottomOf="@+id/editFoneDeContato"
-        app:layout_constraintVertical_bias="0.511" />
+        app:layout_constraintVertical_bias="0.397" />
 
     <Button
         android:id="@+id/btnFinalizar"
@@ -155,10 +128,10 @@
         android:text="@string/Btn_Hint_Finalizar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editFoneDeContato"
-        app:layout_constraintVertical_bias="0.863" />
-
+        app:layout_constraintVertical_bias="0.808" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
